@@ -1,0 +1,31 @@
+name:                Alexis Manuel
+title:               Alexis Manuel
+url:                 https://alexismanuel.com
+enforce_ssl:         alexismanuel.com
+baseurl:             ""
+include:             ['_pages']
+exclude:             []
+author:              Alexis Manuel
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-last-modified-at
+
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+collections:
+  notes:
+    output: true
+    permalink: /notes/:path
+
+defaults:
+  - scope:
+      path: "**/*"
+    values:
+      layout: "default"
+  - scope:
+      path: "_notes/**/*.md"
+    values:
+      layout: "note"
