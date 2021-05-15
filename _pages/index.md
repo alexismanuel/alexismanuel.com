@@ -9,6 +9,7 @@ permalink: /
 <div>
   <div>
     <h1 style="margin: 1em 0 0;">Hello! I'm Alexis.</h1>
+    <p> Welcome to my own digital garden, it is the place I will to try to grow alongside myself. I will discuss various subjects including software/data engineering, finances, health, entrepreneurship and various topic/ideas related to my daily reflections. </p>
   </div>
   <div>
     <div class="grid-element">
