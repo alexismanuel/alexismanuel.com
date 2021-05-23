@@ -1,5 +1,5 @@
 ---
-title: '"Desire is the starting point"'
+title: 'Desire is the starting point'
 image: /assets/napoleon-hill.jpg
 ---
 
