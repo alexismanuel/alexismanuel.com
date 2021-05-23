@@ -10,6 +10,7 @@ author:              Alexis Manuel
 plugins:
   - jekyll-redirect-from
   - jekyll-last-modified-at
+  - jemoji
 
 sass:
   sass_dir:          _sass
