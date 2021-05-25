@@ -1,31 +1,6 @@
-$background-color: white;
-$primary-color: black;
-$color: #222;
-$post-border-bottom: #f0f0f0;
-$blockquote-background: #fff;
-$blockquote-color: #333;
-$blockquote-border: #eee;
-$caption-color: #666;
-$hr-background-color: #dddddd;
-$a-border-bottom: #ddd;
-$a-hover-color: black !important;
-$a-hover-background-color: #fffaf1;
-$a-after-color: #aaaaaa;
-$not-button-focus-color: black !important;
-$not-button-focus-background-color: #ffe8bc !important;
-$card-background-color: #f2f7fb;
-$input-textarea-border-color: #ccc;
-$input-textarea-border-background-color: white;
-
-$font-family-sans: -apple-system, BlinkMacSystemFont, Segoe UI, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
-$font-family-mono: SFMono-Regular,Consolas,DejaVu Sans Mono,Liberation Mono,Menlo,monospace;
-$font-family-serif: Iowan Old Style, Apple Garamond, Baskerville, Georgia, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji;
-$font-size-desktop: 18px;
-$font-size-mobile: 15px;
-
 body {
-  background: $background-color;
-  color: $color;
+  background: $light-background-color;
+  color: $light-color;
   box-sizing: content-box;
   font-family: $font-family-sans;
   margin: 0;
@@ -113,15 +88,15 @@ img {
 
 .post > p:last-of-type {
   padding-bottom: 1em;
-  border-bottom: 5px solid $post-border-bottom;
+  border-bottom: 5px solid $light-post-border-bottom;
 }
 
 blockquote {
   padding: 1.75em;
   margin: 0 -1.75em;
-  background: $blockquote-background;
-  color: $blockquote-color;
-  border: 1px solid $blockquote-border;
+  background: $light-blockquote-background;
+  color: $light-blockquote-color;
+  border: 1px solid $light-blockquote-border;
   border-radius: 4px;
 
   p:first-child {
@@ -137,7 +112,7 @@ blockquote {
   font-family: $font-family-sans;
   margin-top: 1em;
   text-align: center;
-  color: $caption-color;
+  color: $light-caption-color;
   font-size: 0.9em;
 }
 
@@ -146,7 +121,7 @@ hr {
   border: 0;
   height: 1px;
   margin: 1.5em 0;
-  background: $hr-background-color;
+  background: $light-hr-background-color;
 }
 
 
@@ -159,17 +134,17 @@ h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none;
   font-weight: 600;
-  border-bottom: 2px solid $a-border-bottom;
-  color: $primary-color;
+  border-bottom: 2px solid $light-a-border-bottom;
+  color: $light-primary-color;
   &:hover {
-    color: $a-hover-color;
-    background: $a-hover-background-color;
+    color: $light-a-hover-color;
+    background: $light-a-hover-background-color;
   }
   &:after {
     position: relative;
     top: -0.5em;
     content: "↗";
-    color: $a-after-color;
+    color: $light-a-after-color;
   }
   &.internal-link:after {
     content: "";
@@ -177,8 +152,8 @@ a {
 }
 
 :not(button):focus {
-  background: $not-button-focus-background-color;
-  color: $not-button-focus-color;
+  background: $light-not-button-focus-background-color;
+  color: $light-not-button-focus-color;
 }
 
 nav {
@@ -186,7 +161,7 @@ nav {
 }
 
 .card {
-  background-color: $card-background-color;
+  background-color: $light-card-background-color;
   padding: 1rem;
   height: 4rem;
   display: flex;
@@ -221,13 +196,13 @@ code, kbd, samp {
 
 input, textarea {
   margin:0;
-  border:1px solid $input-textarea-border-color;
+  border:1px solid $light-input-textarea-border-color;
   border-radius: 4px;
   padding:0.5em;
   width: calc(100% - 1em - 2px);
   display:inline-block;
   vertical-align:middle;
-  background: $input-textarea-border-background-color;
+  background: $light-input-textarea-border-background-color;
   font-family: $font-family-sans;
 }
 
