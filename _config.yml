@@ -17,6 +17,9 @@ sass:
   style:            :compressed
 
 collections:
+  gpcs:
+    output: true
+    permalink: /gpcs/:path
   notes:
     output: true
     permalink: /notes/:path
@@ -30,3 +33,7 @@ defaults:
       path: "_notes/**/*.md"
     values:
       layout: "note"
+  - scope:
+      path: "_gpcs/**/*.md"
+    values:
+      layout: "gpc"

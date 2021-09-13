@@ -26,11 +26,11 @@ permalink: /
       <p>
         {% if site.posts.size > 0 %}
           <a class="internal-link" href="/blog">
-          I wrote 
+          I wrote
           {% if site.posts.size >= post_limit %}
-            {{ site.posts.size | minus: post_limit }} 
+            {{ site.posts.size | minus: post_limit }}
           {% else %}
-            {{ site.posts.size }} 
+            {{ site.posts.size }}
           {% endif %}
           more posts
           </a>.
@@ -44,6 +44,13 @@ permalink: /
       {% assign notes = site.notes | where_exp: "item", "item.path contains 'notes'" %}
       <p>
         These <a class="internal-link" href="/notes">{{ notes.size | minus: 1 }} notes</a> are an exploration in digital gardening. They are seeds of what could become full-fledged blog posts, new projects, or experimental initiatives in the future.
+      </p>
+    </div>
+    <div class="grid-element">
+      <h2>GPC 👨‍💻</h2>
+      {% assign gpcs = site.gpcs | where_exp: "item", "item.path contains 'gpcs'" %}
+      <p>
+        These <a class="internal-link" href="/gpcs">{{ gpcs.size | minus: 1 }} gpcs (game pass challenges)</a> are part of a treasure hunt I organized for a birthday. It revolves around various logical gpcs to resolve in order to find the treasure key and location.
       </p>
     </div>
   </div>
