@@ -17,9 +17,9 @@ sass:
   style:            :compressed
 
 collections:
-  gpcs:
+  challenges:
     output: true
-    permalink: /gpcs/:path
+    permalink: /challenges/:path
   notes:
     output: true
     permalink: /notes/:path
@@ -34,6 +34,6 @@ defaults:
     values:
       layout: "note"
   - scope:
-      path: "_gpcs/**/*.md"
+      path: "_challenges/**/*.md"
     values:
-      layout: "gpc"
+      layout: "challenge"

@@ -47,10 +47,10 @@ permalink: /
       </p>
     </div>
     <div class="grid-element">
-      <h2>GPC 👨‍💻</h2>
-      {% assign gpcs = site.gpcs | where_exp: "item", "item.path contains 'gpcs'" %}
+      <h2>Challenges 👨‍💻</h2>
+      {% assign challenges = site.challenges | where_exp: "item", "item.path contains 'challenges'" %}
       <p>
-        These <a class="internal-link" href="/gpcs">{{ gpcs.size | minus: 1 }} gpcs (game pass challenges)</a> are part of a treasure hunt I organized for a birthday. It revolves around various logical gpcs to resolve in order to find the treasure key and location.
+        These <a class="internal-link" href="/challenges">{{ challenges.size | minus: 1 }} challenges (game pass challenges)</a> are part of a treasure hunt I organized for a birthday. It revolves around various logical challenges to resolve in order to find the treasure key and location.
       </p>
     </div>
   </div>

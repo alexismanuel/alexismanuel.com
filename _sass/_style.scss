@@ -125,6 +125,22 @@ html {
       content: "↗";
       color: $light-a-after-color;
     }
+    &.button-cls{
+      display: inline-block;
+      padding: 0.35em 1.2em;
+      border: 0.1em solid #000000;
+      margin: 0.3em 0.3em 0.3em 0.3em;
+      border-radius: 0.12em;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-weight: 300;
+      color:#000000;
+      text-align: center;
+      transition: all 0.2s;
+      &:after {
+        content: none
+      }
+    }
     &.internal-link:after {
       content: "";
     }
@@ -211,6 +227,22 @@ html {
       }
       &:after {
         color: $dark-a-after-color;
+      }
+      &.button-cls{
+        display: inline-block;
+        padding: 0.35em 1.2em;
+        border: 0.1em solid #FFFFFF;
+        margin: 0.3em 0.3em 0.3em 0.3em;
+        border-radius: 0.12em;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-weight: 300;
+        color:#FFFFFF;
+        text-align: center;
+        transition: all 0.2s;
+        &:after {
+          content: ""
+        }
       }
     }
     :not(button):focus {
