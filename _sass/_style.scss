@@ -199,6 +199,28 @@ html {
   .backlink-int-link {
     background: $light-backlink-int-background-color
   }
+  .sudoku-grid {
+    td, .sudoku-elem {
+        border: 1px solid;
+        text-align: center;
+        color: black
+    }
+    .part:valid {
+        background-color: #adf0ad;
+    }
+    td:first-child {
+        border-left: solid;
+    }
+    td:nth-child(3n) {
+        border-right: solid ;
+    }
+    tr:first-child {
+        border-top: solid;
+    }
+    tr:nth-child(3n) td {
+        border-bottom: solid ;
+    }
+  }
   &.dark {
     body {
       background: $dark-background-color;
@@ -258,6 +280,11 @@ html {
     }
     .backlink-int-link {
       background: $dark-backlink-int-background-color
+    }
+    .sudoku-grid {
+      td, .sudoku-elem {
+          color: white
+      }
     }
   }
 }
