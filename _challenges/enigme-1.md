@@ -1,5 +1,5 @@
 ---
-title: 'Enigme 1: Code cachée'
+title: 'Enigme 1: Code caché'
 image: /assets/hidden-cat.jpg
 ---
 ![]({{page.image}})
