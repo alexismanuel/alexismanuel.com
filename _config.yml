@@ -49,9 +49,6 @@ sass:
 
 # Collections
 collections:
-  challenges:
-    output: true
-    permalink: /challenges/:path
   notes:
     output: true
     permalink: /notes/:path
@@ -68,10 +65,6 @@ defaults:
     values:
       layout: "note"
   - scope:
-      path: "_challenges/**/*.md"
-    values:
-      layout: "challenge"
-  - scope:
       path: "assets/**/*.scss"
     values:
       layout: null
@@ -84,7 +77,7 @@ twitter:
 social:
   name: Alexis Manuel
   links:
-    - https://twitter.com/alexismanuel
+    - https://twitter.com/a10llm
     - https://github.com/alexismanuel
 
 # Optimization settings

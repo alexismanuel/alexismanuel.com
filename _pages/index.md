@@ -9,9 +9,9 @@ permalink: /
 <div>
   <div>
     <h1 style="margin: 1em 0 0;">Hello! I'm Alexis. :v:</h1>
-    <p> I am a Data Engineer based in France, working on Data Infrastructure and Products at <a target="blank" rel="noopener" href="https://smartway.ai">Smartway</a>. Topics of interest involve entrepreneurship, BCI technologies and personnal development in general. </p>
+    <p> I am a Data Engineer based in France, working on Data PLatform at <a target="blank" rel="noopener" href="https://www.continuity-tech.ai/en/home/">Continuity</a>. Topics of interest involve entrepreneurship, BCI technologies and personnal development in general. </p>
     <p> My digital garden is the place I will to try to grow alongside myself. I will discuss various subjects including software/data engineering, finances, health, entrepreneurship and various topic/ideas related to my daily reflections. </p>
-    <p>You can reach me out on <a target="blank" rel="noopener" href="https://twitter.com/alexismanuel104">Twitter</a> if you wish, I will be happy to discuss any topics. :open_hands:</p>
+    <p>You can reach me out on <a target="blank" rel="noopener" href="https://twitter.com/a10llm">Twitter</a> if you wish, I will be happy to discuss any topics. :open_hands:</p>
   </div>
   <div>
     <div class="grid-element">
@@ -44,13 +44,6 @@ permalink: /
       {% assign notes = site.notes | where_exp: "item", "item.path contains 'notes'" %}
       <p>
         These <a class="internal-link" href="/notes">{{ notes.size | minus: 1 }} notes</a> are an exploration in digital gardening. They are seeds of what could become full-fledged blog posts, new projects, or experimental initiatives in the future.
-      </p>
-    </div>
-    <div class="grid-element">
-      <h2>Challenges 👨‍💻</h2>
-      {% assign challenges = site.challenges | where_exp: "item", "item.path contains 'challenges'" %}
-      <p>
-        These <a class="internal-link" href="/challenges">{{ challenges.size | minus: 1 }} challenges (game pass challenges)</a> are part of a treasure hunt I organized for a birthday. It revolves around various logical challenges to resolve in order to find the treasure key and location.
       </p>
     </div>
   </div>

@@ -19,19 +19,3 @@ fetchPart = function(n) {
     }
     return partMap[n]
 };
-acceptAnswer = function(challengeNumber) {
-    input = document.getElementById("answer-" + challengeNumber)
-    answer = hashCode(input.value);
-    console.log(answer)
-    if (answer == "") {
-        return
-    }
-    isTrue = checkAnswer(challengeNumber, answer);
-    if (isTrue) {
-        part = fetchPart(answer)
-        alert("Bonne réponse. Vous obtenez le fragment de clé " + part + " !")
-    } else {
-        alert("Mauvaise réponse. Essayez encore !")
-        input.value = ''
-    }
-};
