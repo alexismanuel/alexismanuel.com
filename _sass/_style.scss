@@ -1,3 +1,57 @@
+// Configuration
+@use "sass:color";
+@use "sass:math";
+
+// Light theme variables
+$light-background-color: white !default;
+$light-primary-color: black !default;
+$light-color: #222 !default;
+$light-post-border-bottom: #f0f0f0 !default;
+$light-blockquote-background: #fff !default;
+$light-blockquote-color: #333 !default;
+$light-blockquote-border: #eee !default;
+$light-caption-color: #666 !default;
+$light-hr-background-color: #dddddd !default;
+$light-a-border-bottom: #ddd !default;
+$light-a-hover-color: black !default;
+$light-a-hover-background-color: #fffaf1 !default;
+$light-a-after-color: #aaaaaa !default;
+$light-not-button-focus-color: black !default;
+$light-not-button-focus-background-color: #ffe8bc !default;
+$light-card-background-color: #f2f7fb !default;
+$light-input-textarea-border-color: #ccc !default;
+$light-input-textarea-border-background-color: white !default;
+$light-backlink-int-background-color: #f5f7ff !default;
+
+// Dark theme variables
+$dark-background-color: #000020 !default;
+$dark-primary-color: #ffffff !default;
+$dark-color: #dddddd !default;
+$dark-post-border-bottom: #0f0f0f !default;
+$dark-blockquote-background: #000000 !default;
+$dark-blockquote-color: #cccccc !default;
+$dark-blockquote-border: #111111 !default;
+$dark-caption-color: #999999 !default;
+$dark-hr-background-color: #222222 !default;
+$dark-a-border-bottom: #222222 !default;
+$dark-a-hover-color: #ffffff !default;
+$dark-a-hover-background-color: #00050e !default;
+$dark-a-after-color: #555555 !default;
+$dark-not-button-focus-color: #ffffff !default;
+$dark-not-button-focus-background-color: #001743 !default;
+$dark-card-background-color: #0d0804 !default;
+$dark-input-textarea-border-color: #333333 !default;
+$dark-input-textarea-border-background-color: #000000 !default;
+$dark-backlink-int-background-color: #0a0800 !default;
+
+// Font variables
+$font-family-sans: -apple-system, BlinkMacSystemFont, Segoe UI, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif !default;
+$font-family-mono: SFMono-Regular,Consolas,DejaVu Sans Mono,Liberation Mono,Menlo,monospace !default;
+$font-family-serif: Iowan Old Style, Apple Garamond, Baskerville, Georgia, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji !default;
+$font-size-desktop: 18px !default;
+$font-size-mobile: 15px !default;
+
+// Actual styles start here
 html {
   body {
     background: $light-background-color;
