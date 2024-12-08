@@ -1,0 +1,9 @@
+exclude: [
+  'vendor',
+  '.bundle',
+  'Gemfile',
+  'Gemfile.lock',
+  'README.md',
+  '_config.yml',
+  '_config.cloudflare.yml'
+]

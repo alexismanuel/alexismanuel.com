@@ -22,9 +22,9 @@ gem "jemoji", "~> 0.13.0"
 gem "webrick", "~> 1.8.1"
 
 # SASS processing
-gem "sass-embedded", "1.70.0"
+gem "sass-embedded", ">= 1.70.0"
 gem "jekyll-sass-converter", "~> 3.0"
-gem "google-protobuf", "3.25.5" # Pin this version explicitly
+gem "google-protobuf", ">= 4.28.3" # Match Cloudflare's version
 
 # Additional dependencies
 gem "activesupport", "~> 7.1.2"
