@@ -1,21 +1,53 @@
 name:                Alexis Manuel
 title:               Alexis Manuel
+description:         "Personal website and portfolio of Alexis Manuel"
 url:                 https://alexismanuel.com
 enforce_ssl:         alexismanuel.com
 baseurl:             ""
-include:             ['_pages']
-exclude:             []
-author:              Alexis Manuel
+lang:                en
+timezone:            UTC
 
+# Author information
+author:
+  name:              Alexis Manuel
+  url:               https://alexismanuel.com
+
+# Build settings
+markdown:            kramdown
+highlighter:         rouge
+permalink:           pretty
+include:             ['_pages', 'assets']
+exclude:             [
+  '.git',
+  '.github',
+  'node_modules',
+  'vendor',
+  'Gemfile',
+  'Gemfile.lock',
+  'README.md'
+]
+
+# Plugins
 plugins:
   - jekyll-redirect-from
   - jekyll-last-modified-at
   - jemoji
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
+# Sass settings
 sass:
   sass_dir:          _sass
-  style:            :compressed
+  style:             compressed
+  sourcemap:         never
+  implementation:    sass-embedded
+  load_paths:
+    - _sass
+    - ./_sass
+    - ./assets/css
+    - assets/css
 
+# Collections
 collections:
   challenges:
     output: true
@@ -24,11 +56,13 @@ collections:
     output: true
     permalink: /notes/:path
 
+# Default front matter
 defaults:
   - scope:
       path: "**/*"
     values:
       layout: "default"
+      image: /assets/images/og-image.jpg
   - scope:
       path: "_notes/**/*.md"
     values:
@@ -37,3 +71,31 @@ defaults:
       path: "_challenges/**/*.md"
     values:
       layout: "challenge"
+  - scope:
+      path: "assets/**/*.scss"
+    values:
+      layout: null
+
+# SEO settings
+twitter:
+  username:          alexismanuel
+  card:              summary_large_image
+
+social:
+  name: Alexis Manuel
+  links:
+    - https://twitter.com/alexismanuel
+    - https://github.com/alexismanuel
+
+# Optimization settings
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  blanklines: false
+  profile: false
+
+# Development settings
+livereload: true     # Enable live reload in development
+incremental: false   # Enable incremental build in development
+strict_front_matter: true  # Raise an error if front matter is invalid

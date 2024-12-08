@@ -1,0 +1,53 @@
+---
+---
+@use "sass:color";
+@use "sass:math";
+
+@use "../_sass/normalize";
+@use "../_sass/code";
+@use "../_sass/variables" as vars;
+@use "../_sass/style" with (
+  $light-background-color: vars.$light-background-color,
+  $light-primary-color: vars.$light-primary-color,
+  $light-color: vars.$light-color,
+  $light-post-border-bottom: vars.$light-post-border-bottom,
+  $light-blockquote-background: vars.$light-blockquote-background,
+  $light-blockquote-color: vars.$light-blockquote-color,
+  $light-blockquote-border: vars.$light-blockquote-border,
+  $light-caption-color: vars.$light-caption-color,
+  $light-hr-background-color: vars.$light-hr-background-color,
+  $light-a-border-bottom: vars.$light-a-border-bottom,
+  $light-a-hover-color: vars.$light-a-hover-color,
+  $light-a-hover-background-color: vars.$light-a-hover-background-color,
+  $light-a-after-color: vars.$light-a-after-color,
+  $light-not-button-focus-color: vars.$light-not-button-focus-color,
+  $light-not-button-focus-background-color: vars.$light-not-button-focus-background-color,
+  $light-card-background-color: vars.$light-card-background-color,
+  $light-input-textarea-border-color: vars.$light-input-textarea-border-color,
+  $light-input-textarea-border-background-color: vars.$light-input-textarea-border-background-color,
+  $light-backlink-int-background-color: vars.$light-backlink-int-background-color,
+  $dark-background-color: vars.$dark-background-color,
+  $dark-primary-color: vars.$dark-primary-color,
+  $dark-color: vars.$dark-color,
+  $dark-post-border-bottom: vars.$dark-post-border-bottom,
+  $dark-blockquote-background: vars.$dark-blockquote-background,
+  $dark-blockquote-color: vars.$dark-blockquote-color,
+  $dark-blockquote-border: vars.$dark-blockquote-border,
+  $dark-caption-color: vars.$dark-caption-color,
+  $dark-hr-background-color: vars.$dark-hr-background-color,
+  $dark-a-border-bottom: vars.$dark-a-border-bottom,
+  $dark-a-hover-color: vars.$dark-a-hover-color,
+  $dark-a-hover-background-color: vars.$dark-a-hover-background-color,
+  $dark-a-after-color: vars.$dark-a-after-color,
+  $dark-not-button-focus-color: vars.$dark-not-button-focus-color,
+  $dark-not-button-focus-background-color: vars.$dark-not-button-focus-background-color,
+  $dark-card-background-color: vars.$dark-card-background-color,
+  $dark-input-textarea-border-color: vars.$dark-input-textarea-border-color,
+  $dark-input-textarea-border-background-color: vars.$dark-input-textarea-border-background-color,
+  $dark-backlink-int-background-color: vars.$dark-backlink-int-background-color,
+  $font-family-sans: vars.$font-family-sans,
+  $font-family-mono: vars.$font-family-mono,
+  $font-family-serif: vars.$font-family-serif,
+  $font-size-desktop: vars.$font-size-desktop,
+  $font-size-mobile: vars.$font-size-mobile
+);
